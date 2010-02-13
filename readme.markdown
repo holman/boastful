@@ -37,10 +37,9 @@ I hate readmes without a pretty picture to explain everything. Here's a current 
   `<script type="text/javascript" src="jquery-boastful.js"></script>`
   
 3. Lock and load into your `$(document).ready()`:
-
-  `$(document).ready(function() {
-      $('#boastful').boastful();
-   });`
+<code><pre>$(document).ready(function() {
+   $('#boastful').boastful();
+});</pre></code>
   
 4. Tell it where to go:
 
