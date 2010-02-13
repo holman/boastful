@@ -16,11 +16,11 @@
   opacity: .7;
   display: none;
   width: 0;
-	height: 0;
-	border-left: 10px solid transparent; 
-	border-right: 10px solid transparent;
-	border-bottom: 10px solid #000;
-	border-top: 0;
+  height: 0;
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #000;
+  border-top: 0;
 }
 .boastful .boastful_tweet{
   position: absolute;
