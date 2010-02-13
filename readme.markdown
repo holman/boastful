@@ -28,25 +28,17 @@ I hate readmes without a pretty picture to explain everything. Here's a current 
 
 ## Installing
 
-1. Rock your jQuery, like:
-
-  `<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>`
-   
+1. Rock your jQuery, like:<br />
+`<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>`
 2. Deviously load up [jquery.boastful](http://github.com/holman/boastful/tree/master/jquery.boastful.js):
 
   `<script type="text/javascript" src="jquery-boastful.js"></script>`
-  
-3. Lock and load into your `$(document).ready()`:
-<code><pre>$(document).ready(function() {
+3. Lock and load into your `$(document).ready()`:<pre><code>$(document).ready(function() {
    $('#boastful').boastful();
-});</pre></code>
-  
+});</code></pre>
 4. Tell it where to go:
-
   `<div id="boastful"></div>`
-
 5. Style accordingly. For a starting point, check out [boastful.css](http://github.com/holman/boastful/tree/master/boastful.css).
-
 6. High-five your girlfriend.
 
 ## Found an issue?
