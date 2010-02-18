@@ -1,5 +1,6 @@
 (function ($) {
   $.fn.boastful = function(options){
+    options = options || {}
     var output = $(this)
     var defaults = {
                       location: location.href,
