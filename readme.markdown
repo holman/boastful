@@ -43,7 +43,7 @@ Feel free to browse [example.html](http://github.com/holman/boastful/tree/master
 
 ## Optional options
 
-In your `.boastful()`, call you can pass in some options. Here's a list:
+In your `.boastful()` call, you can pass in some options. Here's a list:
 
 - **location**: the URL to search Twitter for (default: location.href, the current page)
 - **empty_message**: message to display if no tweets found, HTML allowed (default: `No one's mentioned this page on Twitter yet. <a href="http://twitter.com?status=page_url_here>You could be the first</a>.`)
