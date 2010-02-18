@@ -28,16 +28,26 @@ I hate readmes without a pretty picture to explain everything. Here's a current 
 
 ## Installing
 
+Feel free to browse [example.html](http://github.com/holman/boastful/tree/master/example.html) for a basic example. Otherwise, the general steps:
+
 1. Rock your jQuery, like:<br />
 `<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>`
 2. Deviously load up [jquery.boastful](http://github.com/holman/boastful/tree/master/jquery.boastful.js):<br />
-`<script type="text/javascript" src="jquery-boastful.js"></script>`
+`<script type="text/javascript" src="jquery.boastful.js"></script>`
 3. Lock and load into your `$(document).ready()`:<pre><code>$(document).ready(function() {
    $('#boastful').boastful();
 });</code></pre>
 4. Tell it where to go:<br />`<div id="boastful"></div>`
 5. Style accordingly. For a starting point, check out [boastful.css](http://github.com/holman/boastful/tree/master/boastful.css).
 6. High-five your girlfriend.
+
+## Optional options
+
+In your `.boastful()`, call you can pass in some options. Here's a list:
+
+- **location**: the URL to search Twitter for (default: location.href, the current page)
+- **empty_message**: message to display if no tweets found, HTML allowed (default: `No one's mentioned this page on Twitter yet. <a href="http://twitter.com?status=page_url_here>You could be the first</a>.`)
+- **limit**: maximum to show per page (default: 50, which is also the maximum)
 
 ## Found an issue?
 
