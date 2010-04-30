@@ -2,6 +2,8 @@
   display: inline;
 }
 .boastful img{
+  width: 48px;
+  height: 48px;
   margin: 3px;
   border: 0;
   -webkit-border-top-left-radius: 7px;
