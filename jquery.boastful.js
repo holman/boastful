@@ -27,8 +27,13 @@
     }
 
     var parse_request = function(data){
+      var author_urls = [];
       if(data.response.list.length > 0) {
         $.each(data.response.list, function(i,tweetback){
+          if($.inArray(tweetback.author.url,author_urls) > -1) {
+            return true
+          }
+          author_urls.push(tweetback.author.url)
           output.append(format_tweetback(tweetback))
           $('.boastful').mouseover(function(){ $(this).children('.boastful_tweet, .boastful_pointer').show() })
           $('.boastful').mousemove(function(kmouse){ 
