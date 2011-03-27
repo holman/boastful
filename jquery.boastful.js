@@ -9,7 +9,7 @@
                                        +'You could be the first</a>.',
                       limit: 50
                    }
-    var settings = $.extend(defaults, options)
+    $.extend(defaults, options)
 
     function format_tweetback(tweetback) {
       formatted  = ''
