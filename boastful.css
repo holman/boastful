@@ -6,6 +6,8 @@
   height: 48px;
   margin: 3px;
   border: 0;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
   -webkit-border-top-left-radius: 7px;
   -webkit-border-bottom-right-radius: 7px;
   -moz-border-radius-topleft: 7px;
@@ -35,6 +37,7 @@
   font-size: 11px;
   text-shadow: 1px 1px 0 #000;
   color: #eee;
+  border-radius: 7px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
 }
