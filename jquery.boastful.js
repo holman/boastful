@@ -1,6 +1,5 @@
 (function ($) {
   $.fn.boastful = function(options){
-    options = options || {}
     var output = $(this)
     var defaults = {
                       location: location.href,
@@ -9,7 +8,7 @@
                                        +'You could be the first</a>.',
                       limit: 50
                    }
-    $.extend(defaults, options)
+    options = $.extend({}, defaults, options);
 
     function format_tweetback(tweetback) {
       formatted  = ''
@@ -49,7 +48,7 @@
           $('.boastful').mouseout(function(){ $(this).children('.boastful_tweet, .boastful_pointer').hide() })
         });
       } else {
-        output.append(defaults.empty_message)
+        output.append(options.empty_message)
       }
     }
     
@@ -57,8 +56,8 @@
       url:'http://otter.topsy.com/trackbacks.js',
       data:
         {
-          url: defaults.location,
-          perpage: defaults.limit
+          url: options.location,
+          perpage: options.limit
         },
       success:parse_request,
       dataType:'jsonp'}
