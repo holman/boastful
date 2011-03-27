@@ -34,19 +34,19 @@
           }
           author_urls.push(tweetback.author.url);
           output.append(format_tweetback(tweetback));
-          $('.boastful').mouseover(function(){ $(this).children('.boastful_tweet, .boastful_pointer').show(); });
-          $('.boastful').mousemove(function(kmouse){ 
-            $(this).children('.boastful_tweet').css({
-              left:$(this).position().left-105, 
-              top:$(this).position().top+25
-            });
-            $(this).children('.boastful_pointer').css({
-              left:$(this).position().left+18, 
-              top:$(this).position().top+15
-            });
-          });
-          $('.boastful').mouseout(function(){ $(this).children('.boastful_tweet, .boastful_pointer').hide(); });
         });
+        $('.boastful').mouseover(function(){ $(this).children('.boastful_tweet, .boastful_pointer').show(); });
+        $('.boastful').mousemove(function(kmouse){
+          $(this).children('.boastful_tweet').css({
+            left:$(this).position().left-105,
+            top:$(this).position().top+25
+          });
+          $(this).children('.boastful_pointer').css({
+            left:$(this).position().left+18,
+            top:$(this).position().top+15
+          });
+        });
+        $('.boastful').mouseout(function(){ $(this).children('.boastful_tweet, .boastful_pointer').hide(); });
       } else {
         output.append(options.empty_message);
       }
