@@ -4,7 +4,7 @@
     var defaults = {
                       location: location.href,
                       empty_message: '<p>No one&rsquo;s mentioned this page on Twitter yet. '+
-                                       '<a href="http://twitter.com?status='+ location.href +'">'
+                                       '<a href="https://twitter.com?status='+ location.href +'">'
                                        +'You could be the first</a>.</p>',
                       limit: 50
                    }
