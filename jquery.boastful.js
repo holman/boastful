@@ -3,9 +3,9 @@
     var output = $(this)
     var defaults = {
                       location: location.href,
-                      empty_message: 'No one&rsquo;s mentioned this page on Twitter yet. '+
+                      empty_message: '<p>No one&rsquo;s mentioned this page on Twitter yet. '+
                                        '<a href="http://twitter.com?status='+ location.href +'">'
-                                       +'You could be the first</a>.',
+                                       +'You could be the first</a>.</p>',
                       limit: 50
                    }
     options = $.extend({}, defaults, options)
