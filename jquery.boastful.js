@@ -6,9 +6,25 @@
                       empty_message: '<p>No one&rsquo;s mentioned this page on Twitter yet. '+
                                        '<a href="https://twitter.com?status='+ location.href +'">'
                                        +'You could be the first</a>.</p>',
-                      limit: 50
+                      limit: 50,
+                      acceptParams: []
                    }
     options = $.extend({}, defaults, options)
+
+    if (options.location.indexOf('?') != -1) {
+      if (!options.acceptParams.length) {
+        options.location = options.location.split("?")[0]
+      } else {
+        var splitLoc = options.location.split("?")
+        options.location = splitLoc[0]
+        var params = splitLoc[1].split("&")
+        for (var i = params.length - 1; i >= 0; i--)
+          if (options.acceptParams.indexOf(params[i].split("=")[0]) == -1)
+            params.splice(i, 1)
+        if (params.length)
+          options.location += "?" + params.join("&")
+      }
+    }
 
     function format_tweetback(tweetback) {
       formatted  = ''
