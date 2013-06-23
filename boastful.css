@@ -45,3 +45,8 @@
   font-size: 13px;
   font-weight: bold;
 }
+.boastful .boastful_action img{
+  height: 16px;
+  width: 16px;
+  float: right;
+}
